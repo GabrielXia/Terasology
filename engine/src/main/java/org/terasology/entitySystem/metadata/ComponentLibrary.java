@@ -95,11 +95,6 @@ public class ComponentLibrary extends AbstractClassLibrary<Component> {
         return (ComponentMetadata<?>) super.resolve(name, context);
     }
 
-    @Override
-    public ComponentMetadata<?> resolve(String name, Module context) {
-        return (ComponentMetadata<?>) super.resolve(name, context);
-    }
-
     public Iterable<ComponentMetadata> iterateComponentMetadata() {
         return Iterables.filter(this, ComponentMetadata.class);
     }
